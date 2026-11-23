@@ -1,6 +1,6 @@
-import { Link, useNavigation } from '@react-navigation/native';
+import { Link } from '@react-navigation/native';
 import { ScrollView, Text } from 'react-native';
-import { MenuNavigatorScreenProps } from '../types/screen-props';
+import type { MenuNavigatorScreenProps } from '../types/screen-props';
 
 export default function OverviewScreen (
     { navigation, route }: MenuNavigatorScreenProps<'OverviewTab'>

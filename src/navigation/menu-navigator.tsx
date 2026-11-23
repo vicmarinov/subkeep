@@ -4,7 +4,7 @@ import SettingsScreen from '../screens/settings-screen';
 import SubscriptionsNavigator from './subscriptions-navigator';
 import { Platform } from 'react-native';
 import MaterialIcons from '@react-native-vector-icons/material-icons';
-import { MenuNavigatorParamList } from '../types/navigation-params';
+import type { MenuNavigatorParamList } from '../types/navigation-params';
 
 const TabNavigator = createNativeBottomTabNavigator<MenuNavigatorParamList>();
 

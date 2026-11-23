@@ -1,6 +1,6 @@
 import { Link } from '@react-navigation/native';
 import { ScrollView, Text } from 'react-native';
-import { SubscriptionsNavigatorScreenProps } from '../types/screen-props';
+import type { SubscriptionsNavigatorScreenProps } from '../types/screen-props';
 
 export default function SubscriptionDetailsScreen (
     { navigation, route }: SubscriptionsNavigatorScreenProps<'SubscriptionDetails'>

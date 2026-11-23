@@ -2,7 +2,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import MenuNavigator from './menu-navigator';
 import SaveSubscriptionScreen from '../screens/save-subscription-screen';
 import AuthNavigator from './auth-navigator';
-import { RootNavigatorParamList } from '../types/navigation-params';
+import type { RootNavigatorParamList } from '../types/navigation-params';
 
 const StackNavigator = createNativeStackNavigator<RootNavigatorParamList>();
 

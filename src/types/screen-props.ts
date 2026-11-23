@@ -1,12 +1,12 @@
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { NativeBottomTabScreenProps } from '@react-navigation/bottom-tabs/unstable';
-import {
+import type { CompositeScreenProps } from '@react-navigation/native';
+import type { NativeStackScreenProps } from '@react-navigation/native-stack';
+import type { NativeBottomTabScreenProps } from '@react-navigation/bottom-tabs/unstable';
+import type {
     AuthNavigatorParamList,
     MenuNavigatorParamList,
     RootNavigatorParamList,
     SubscriptionsNavigatorParamList
 } from './navigation-params';
-import { CompositeScreenProps } from '@react-navigation/native';
 
 export type RootNavigatorScreenProps<T extends keyof RootNavigatorParamList> =
     NativeStackScreenProps<RootNavigatorParamList, T>;

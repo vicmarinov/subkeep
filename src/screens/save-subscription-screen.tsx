@@ -1,5 +1,5 @@
 import { ScrollView, Text } from 'react-native';
-import { RootNavigatorScreenProps } from '../types/screen-props';
+import type { RootNavigatorScreenProps } from '../types/screen-props';
 
 export default function SaveSubscriptionScreen (
     { navigation, route }: RootNavigatorScreenProps<'SaveSubscription'>

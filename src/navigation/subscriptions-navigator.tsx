@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import SubscriptionsListScreen from '../screens/subscriptions-list-screen';
 import SubscriptionDetailsScreen from '../screens/subscription-details-screen';
-import { SubscriptionsNavigatorParamList } from '../types/navigation-params';
+import type { SubscriptionsNavigatorParamList } from '../types/navigation-params';
 
 const StackNavigator = createNativeStackNavigator<SubscriptionsNavigatorParamList>();
 

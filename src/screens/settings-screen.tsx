@@ -1,5 +1,5 @@
 import { ScrollView, Text } from 'react-native';
-import { MenuNavigatorScreenProps } from '../types/screen-props';
+import type { MenuNavigatorScreenProps } from '../types/screen-props';
 
 export default function SettingsScreen (
     { navigation, route }: MenuNavigatorScreenProps<'SettingsTab'>
