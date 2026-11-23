@@ -1,12 +1,13 @@
-import { ScrollView, Text } from 'react-native';
+import { Text } from 'react-native';
 import type { RootNavigatorScreenProps } from '../types/screen-props';
+import Screen from '../components/screen';
 
 export default function SaveSubscriptionScreen (
     { navigation, route }: RootNavigatorScreenProps<'SaveSubscription'>
 ) {
     return (
-        <ScrollView contentInsetAdjustmentBehavior="automatic">
+        <Screen>
             <Text>Save Subscription Screen</Text>
-        </ScrollView>
+        </Screen>
     );
 }

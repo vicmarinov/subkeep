@@ -1,14 +1,15 @@
 import { Link } from '@react-navigation/native';
-import { ScrollView, Text } from 'react-native';
+import { Text } from 'react-native';
 import type { AuthNavigatorScreenProps } from '../types/screen-props';
+import Screen from '../components/screen';
 
 export default function LoginScreen (
     { navigation, route }: AuthNavigatorScreenProps<'Login'>
 ) {
     return (
-        <ScrollView contentInsetAdjustmentBehavior="automatic">
+        <Screen>
             <Text>Login Screen</Text>
             <Link screen='Signup'>Go to Signup Screen</Link>
-        </ScrollView>
+        </Screen>
     );
 }

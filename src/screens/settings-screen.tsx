@@ -1,12 +1,13 @@
-import { ScrollView, Text } from 'react-native';
+import { Text } from 'react-native';
 import type { MenuNavigatorScreenProps } from '../types/screen-props';
+import Screen from '../components/screen';
 
 export default function SettingsScreen (
     { navigation, route }: MenuNavigatorScreenProps<'SettingsTab'>
 ) {
     return (
-        <ScrollView contentInsetAdjustmentBehavior="automatic">
+        <Screen>
             <Text>Settings Screen</Text>
-        </ScrollView>
+        </Screen>
     );
 }

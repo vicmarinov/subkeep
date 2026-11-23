@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { ScrollView, Text } from 'react-native';
+import { Text } from 'react-native';
 import { Link } from '@react-navigation/native';
 import useCategoryNames from '../contexts/categoryNames/use-category-names';
 import Chips from '../components/chips';
 import type { SubscriptionsNavigatorScreenProps } from '../types/screen-props';
+import Screen from '../components/screen';
 
 export default function SubscriptionsListScreen (
     { navigation, route }: SubscriptionsNavigatorScreenProps<'SubscriptionsList'>
@@ -12,7 +13,7 @@ export default function SubscriptionsListScreen (
     const [selectedCategoryName, setSelectedCategoryName] = useState('All');
 
     return (
-        <ScrollView contentInsetAdjustmentBehavior="automatic">
+        <Screen>
             <Text>Subscriptions List Screen</Text>
             <Link screen='SubscriptionDetails'>Go to Subscription Details Screen</Link>
             <Link screen='SaveSubscription'>Go to Save Subscription Screen</Link>
@@ -26,6 +27,6 @@ export default function SubscriptionsListScreen (
                     setSelectedValue={setSelectedCategoryName}
                 />
             )}
-        </ScrollView>
+        </Screen>
     );
 }

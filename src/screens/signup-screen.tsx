@@ -1,12 +1,13 @@
-import { ScrollView, Text } from 'react-native';
+import { Text } from 'react-native';
 import type { AuthNavigatorScreenProps } from '../types/screen-props';
+import Screen from '../components/screen';
 
 export default function SignupScreen (
     { navigation, route }: AuthNavigatorScreenProps<'Signup'>
 ) {
     return (
-        <ScrollView contentInsetAdjustmentBehavior="automatic">
+        <Screen>
             <Text>Signup Screen</Text>
-        </ScrollView>
+        </Screen>
     );
 }
