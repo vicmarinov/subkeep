@@ -4,15 +4,16 @@ import SettingsScreen from '../screens/settings-screen';
 import SubscriptionsNavigator from './subscriptions-navigator';
 import { Platform } from 'react-native';
 import MaterialIcons from '@react-native-vector-icons/material-icons';
+import { MenuNavigatorParamList } from '../types/navigation-params';
 
-const TabNavigator = createNativeBottomTabNavigator();
+const TabNavigator = createNativeBottomTabNavigator<MenuNavigatorParamList>();
 
 export default function MenuNavigator () {
     // TODO: Make sure that all tab icons are displayed correctly on Android
     return (
         <TabNavigator.Navigator>
             <TabNavigator.Screen
-                name='Overview Tab'
+                name='OverviewTab'
                 component={OverviewScreen}
                 options={{
                     title: 'Overview',
@@ -29,7 +30,7 @@ export default function MenuNavigator () {
                 }}
             />
             <TabNavigator.Screen
-                name='Subscriptions Tab'
+                name='SubscriptionsTab'
                 component={SubscriptionsNavigator}
                 options={{
                     title: 'Subscriptions',
@@ -46,7 +47,7 @@ export default function MenuNavigator () {
                 }}
             />
             <TabNavigator.Screen
-                name='Settings Tab'
+                name='SettingsTab'
                 component={SettingsScreen}
                 options={{
                     title: 'Settings',

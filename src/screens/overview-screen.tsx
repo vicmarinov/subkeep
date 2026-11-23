@@ -1,11 +1,14 @@
-import { Link } from '@react-navigation/native';
+import { Link, useNavigation } from '@react-navigation/native';
 import { ScrollView, Text } from 'react-native';
+import { MenuNavigatorScreenProps } from '../types/screen-props';
 
-export default function OverviewScreen () {
+export default function OverviewScreen (
+    { navigation, route }: MenuNavigatorScreenProps<'OverviewTab'>
+) {
     return (
         <ScrollView contentInsetAdjustmentBehavior="automatic">
             <Text>Overview Screen</Text>
-            <Link screen='Save Subscription'>Go to Save Subscription Screen</Link>
+            <Link screen='SaveSubscription'>Go to Save Subscription Screen</Link>
         </ScrollView>
     );
 }

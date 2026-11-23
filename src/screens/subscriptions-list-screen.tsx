@@ -1,12 +1,15 @@
 import { Link } from '@react-navigation/native';
 import { ScrollView, Text } from 'react-native';
+import { SubscriptionsNavigatorScreenProps } from '../types/screen-props';
 
-export default function SubscriptionsListScreen () {
+export default function SubscriptionsListScreen (
+    { navigation, route }: SubscriptionsNavigatorScreenProps<'SubscriptionsList'>
+) {
     return (
         <ScrollView contentInsetAdjustmentBehavior="automatic">
             <Text>Subscriptions List Screen</Text>
-            <Link screen='Subscription Details'>Go to Subscription Details Screen</Link>
-            <Link screen='Save Subscription'>Go to Save Subscription Screen</Link>
+            <Link screen='SubscriptionDetails'>Go to Subscription Details Screen</Link>
+            <Link screen='SaveSubscription'>Go to Save Subscription Screen</Link>
         </ScrollView>
     );
 }
