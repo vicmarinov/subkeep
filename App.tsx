@@ -1,7 +1,15 @@
-import { Text } from 'react-native';
+import { StatusBar } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import RootNavigator from './navigation/root-navigator';
 
 export default function App () {
     return (
-        <Text>Hello, world!</Text>
+        <>
+            <StatusBar />
+
+            <NavigationContainer >
+                <RootNavigator />
+            </NavigationContainer>
+        </>
     );
 }
