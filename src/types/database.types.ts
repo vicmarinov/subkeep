@@ -35,7 +35,7 @@ export type Database = {
       subscriptions: {
         Row: {
           billing_day_of_month: number
-          category_id: number
+          category_id: number | null
           created_at: string
           id: string
           name: string
@@ -45,7 +45,7 @@ export type Database = {
         }
         Insert: {
           billing_day_of_month: number
-          category_id: number
+          category_id?: number | null
           created_at?: string
           id?: string
           name: string
@@ -55,7 +55,7 @@ export type Database = {
         }
         Update: {
           billing_day_of_month?: number
-          category_id?: number
+          category_id?: number | null
           created_at?: string
           id?: string
           name?: string
