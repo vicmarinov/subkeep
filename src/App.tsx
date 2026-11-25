@@ -1,16 +1,19 @@
 import { StatusBar } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
 import RootNavigator from './navigation/root-navigator';
 import CategoryNamesProvider from './contexts/categoryNames/category-names-provider';
 
 export default function App () {
     return (
-        <CategoryNamesProvider>
+        <SafeAreaProvider>
             <StatusBar />
 
-            <NavigationContainer >
-                <RootNavigator />
-            </NavigationContainer>
-        </CategoryNamesProvider>
+            <CategoryNamesProvider>
+                <NavigationContainer >
+                    <RootNavigator />
+                </NavigationContainer>
+            </CategoryNamesProvider>
+        </SafeAreaProvider>
     );
 }

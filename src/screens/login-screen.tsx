@@ -7,9 +7,9 @@ export default function LoginScreen (
     { navigation, route }: AuthNavigatorScreenProps<'Login'>
 ) {
     return (
-        <Screen>
+        <Screen.NonScrollable>
             <Text>Login Screen</Text>
             <Link screen='Signup'>Go to Signup Screen</Link>
-        </Screen>
+        </Screen.NonScrollable>
     );
 }
