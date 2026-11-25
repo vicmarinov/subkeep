@@ -29,7 +29,7 @@ export default function CategoryNamesProvider (
 
                     console.error('Category names fetch error:', error);
                 }
-            })
+            });
         
         return () => abortController.abort();
     }, []);

@@ -42,3 +42,6 @@ yarn-error.*
 
 # Supabase
 supabase/.temp
+
+# Local notes file
+notes*.local.md
