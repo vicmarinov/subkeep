@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15
     },
     subscriptionsContainer: {
-        gap: 10
+        gap: 15
     }
 });
 
