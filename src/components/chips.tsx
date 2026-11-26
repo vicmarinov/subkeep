@@ -1,5 +1,6 @@
 import { FlatList, Pressable, Text, StyleSheet } from 'react-native';
 import colorPalette from '../constants/color-palette';
+import shadow from '../constants/shadow';
 
 type ChipValue = string | number;
 
@@ -72,7 +73,8 @@ function ChipsItem<V extends ChipValue> ({
 
 const styles = StyleSheet.create({
     list: {
-        flexGrow: 0
+        flexGrow: 0,
+        paddingVertical: 15
     },
     listContentContainer: {
         gap: 10
@@ -83,7 +85,8 @@ const styles = StyleSheet.create({
         paddingHorizontal: 25,
         borderRadius: 999,
         borderCurve: 'continuous',
-        backgroundColor: colorPalette.inputBackground
+        backgroundColor: colorPalette.inputBackground,
+        boxShadow: [shadow]
     },
     selectedItem: {
         backgroundColor: colorPalette.accent
@@ -93,7 +96,7 @@ const styles = StyleSheet.create({
     },
 
     itemText: {
-        fontSize: 20,
+        fontSize: 15,
         color: colorPalette.text
     },
     selectedItemText: {
