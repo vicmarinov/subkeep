@@ -4,7 +4,7 @@ import shadow from '../constants/shadow';
 
 type ChipValue = string | number;
 
-type ChipsProps<T, V extends ChipValue> = {
+interface ChipsProps<T, V extends ChipValue> {
     data: readonly T[];
     keyExtractor: (item: T, index: number) => string;
     valueExtractor: (item: T) => V;
@@ -42,10 +42,10 @@ export default function Chips<T, V extends ChipValue> ({
     return <FlatList {...props} />;
 }
 
-type ChipItemProps<V extends ChipValue> = {
-    value: V,
-    isSelected: boolean,
-    select: (value: V) => void
+interface ChipItemProps<V extends ChipValue> {
+    value: V;
+    isSelected: boolean;
+    select: (value: V) => void;
 };
 
 function ChipsItem<V extends ChipValue> ({
